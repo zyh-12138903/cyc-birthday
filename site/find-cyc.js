@@ -41,3 +41,5 @@ findEl('findClose').onclick=()=>findEl('findDialog').close();
 findEl('findDialog').addEventListener('close',()=>{clearTimeout(findTimer);findBusy=false;});
 findEl('findPrize').onclick=()=>{findWon=true;findEl('findDialog').close();$('letter').showModal();celebrate();};
 
+
+findEl('findSkip').onclick=findEl('findPrize').onclick;
